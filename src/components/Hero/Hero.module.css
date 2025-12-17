@@ -1,0 +1,84 @@
+.hero {
+  padding: 180px 0 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../public/images/photo_hero.jpg") center/cover no-repeat;
+}
+
+.heroContent {
+  position: relative;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-shadow: var(--text-shadow-dark);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  color: var(--white-color);
+  text-shadow: var(--text-shadow-dark);
+}
+
+.description {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: auto;
+  color: var(--white-color);
+  text-shadow: var(--text-shadow-dark);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 0 80px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+}

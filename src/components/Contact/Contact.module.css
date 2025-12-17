@@ -1,0 +1,143 @@
+.contact {
+  padding: 60px 0;
+  background-color: var(--white-color);
+  box-shadow: 0 -4px 10px var(--shadow-color);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.socialLink:hover {
+  color: var(--gray-color);
+}
+
+.socialIcon {
+  width: 48px;
+  height: 48px;
+}
+
+.addressItem {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.addressIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.attribution {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+  color: var(--text-gray-color);
+}
+
+.attribution p {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 0;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .info h3 {
+    font-size: 1.5rem;
+  }
+
+  .socialIcons {
+    gap: 0.8rem;
+  }
+
+  .socialLink {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 30px 0;
+  }
+
+  .content {
+    gap: 1.5rem;
+  }
+
+  .info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .socialIcons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .socialLink {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .addressItem {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .addressIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .attribution {
+    margin-top: 1.5rem;
+    padding-top: 0.8rem;
+  }
+}

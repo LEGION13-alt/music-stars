@@ -1,0 +1,89 @@
+.content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+}
+
+.placeholder {
+  width: 300px;
+  height: 500px;
+  background: url("../../../public/images/teacher.jpg") left/cover no-repeat;
+  border-radius: 2%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.education h4,
+.approachTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li {
+  padding: 0.5rem 0;
+}
+
+.titleWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.methodologyItem {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 1.5rem 0;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .placeholder {
+    width: 300px;
+    height: 300px;
+    background: url("../../../public/images/teacher.jpg") top/cover no-repeat;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    gap: 1.5rem;
+  }
+
+  .placeholder {
+    width: 250px;
+    height: 250px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .methodologyItem {
+    margin: 1rem 0;
+  }
+}

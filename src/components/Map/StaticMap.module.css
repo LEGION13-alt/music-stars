@@ -1,0 +1,49 @@
+.mapContainer {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+  box-shadow: 0 3px 15px var(--shadow-color);
+}
+
+.mapLink {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+.staticMap {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.staticMap:hover {
+  transform: scale(1.02);
+}
+
+.mapOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+  background: var(--main-text-color);
+  color: var(--white-color);
+}
+
+.mapLink:hover .mapOverlay {
+  background: var(--gray-color);
+}
+
+@media (max-width: 768px) {
+  .mapOverlay {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}

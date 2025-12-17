@@ -1,0 +1,21 @@
+:root {
+  --font-heading: "Libre Baskerville", "Times New Roman", Times, serif;
+  --font-body: "Merriweather", Georgia, "Times New Roman", Times, serif;
+
+  --white-color:  #faf9f2;
+  --text-gray-color: #555;
+  --gray-color: #999;
+  --accent-color: #d4af37;
+  --main-text-color: #333333;
+  --card-dark-gradient: linear-gradient(
+    rgba(29, 28, 28, 0.2),
+    rgba(22, 22, 22, 0.2)
+  );
+  --gallery-white-gradient: linear-gradient(
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --text-shadow-dark: 8px 8px 8px rgba(10, 10, 10, 10);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --gold-accent: radial-gradient(circle, #ffd700, #d4af37);
+}
