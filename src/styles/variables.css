@@ -1,6 +1,6 @@
 :root {
-  --font-heading: "Libre Baskerville", "Times New Roman", Times, serif;
-  --font-body: "Merriweather", Georgia, "Times New Roman", Times, serif;
+  --font-heading: 'Libre Baskerville', serif;
+  --font-body: 'Merriweather', serif;
 
   --white-color:  #faf9f2;
   --text-gray-color: #555;

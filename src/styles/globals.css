@@ -8,6 +8,7 @@
 
 html {
   height: 100%;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -94,7 +95,6 @@ img[src*="icon"] {
   filter: none;
 }
 
-
 @media (max-width: 768px) {
   .section {
     padding: 35px 0;
@@ -111,6 +111,15 @@ img[src*="icon"] {
   .mainIcon {
     width: 48px;
     height: 48px;
+  }
+
+  body {
+    background-color: #fbf8f0;
+    background-image: none;
+  }
+
+   html {
+    scroll-padding-top: 60px;
   }
 }
 

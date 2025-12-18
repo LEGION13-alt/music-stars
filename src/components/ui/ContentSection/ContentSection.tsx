@@ -84,7 +84,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
                       src={item.image}
                       alt={item.title}
                       className={styles.image}
-                      loading="lazy"
+                      loading={window.innerWidth <= 480 ? "eager" : "lazy"}
                     />
                   </div>
                 </div>

@@ -5,13 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run build-fonts && vite build",
+    "build-fonts": "cp -r node_modules/typeface-*/files/* public/fonts/ || true",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/libre-baskerville": "^5.2.10",
+    "@fontsource/merriweather": "^5.2.11",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "typeface-libre-baskerville": "^1.1.13",
+    "typeface-merriweather": "^1.1.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
-import logoImage from "../../../public/images/logoImage.png";
+import logo from "../../../public/images/logo.png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,11 +50,12 @@ const Header: React.FC = () => {
       <div className={styles.container}>
         <nav className={styles.nav}>
           <img
-            src={logoImage}
+            src={logo}
             alt="Music Stars Logo"
-            className={styles.logoImage}
+            className={styles.logo}
+            width="60"
+            height="60"
           />
-
           <button
             className={styles.burgerMenu}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
