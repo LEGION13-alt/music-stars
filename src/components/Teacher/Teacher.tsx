@@ -48,7 +48,9 @@ const Teacher: React.FC = () => {
 
               <div className={styles.methodology}>
                 <div className={styles.methodologyItem}>
-                  <strong>От цели — к результату</strong>
+                  <strong style={{ textTransform: "uppercase" }}>
+                    От цели — к результату
+                  </strong>
                   <p>
                     Мой подход выходит далеко за рамки стандартного обучения.
                     Это продуманная система, где освоение инструмента становится
@@ -57,7 +59,9 @@ const Teacher: React.FC = () => {
                 </div>
 
                 <div className={styles.methodologyItem}>
-                  <strong>Творчество с первого урока</strong>
+                  <strong style={{ textTransform: "uppercase" }}>
+                    Творчество с первого урока
+                  </strong>
                   <p>
                     Я совмещаю классическую базу (постановка рук, теория,
                     сольфеджио) с репертуаром, который искренне нравится ученику
@@ -67,7 +71,9 @@ const Teacher: React.FC = () => {
                 </div>
 
                 <div className={styles.methodologyItem}>
-                  <strong>Главный результат — уверенность в себе</strong>
+                  <strong style={{ textTransform: "uppercase" }}>
+                    Главный результат — уверенность в себе
+                  </strong>
                   <p>
                     Мои ученики не просто учатся, а раскрывают свою
                     индивидуальность, находят смелость для самовыражения и

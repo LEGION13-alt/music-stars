@@ -9,13 +9,13 @@
 html {
   height: 100%;
   scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-body);
   line-height: 1.6;
   color: var(--main-text-color);
-  scroll-behavior: smooth;
   font-weight: 400;
   min-height: 100vh;
   background: linear-gradient(
@@ -118,7 +118,7 @@ img[src*="icon"] {
     background-image: none;
   }
 
-   html {
+  html {
     scroll-padding-top: 60px;
   }
 }
@@ -138,5 +138,9 @@ img[src*="icon"] {
     width: 60px;
     height: 3px;
     margin: 0.8rem auto;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }

@@ -60,7 +60,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
 
         {additionalInfo && (
           <div className={styles.additionalInfo}>
-            <p className={styles.additionalText}>{additionalInfo}</p>
+            <p>{additionalInfo}</p>
           </div>
         )}
 
@@ -90,7 +90,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
                 </div>
                 <div className={styles.contentWrapper}>
                   <div className={styles.content}>
-                    <h3 className={styles.title}>{item.title}</h3>
+                    <h3 className={styles.itemTitle}>{item.title}</h3>
 
                     {item.ageGroup && (
                       <p className={styles.ageGroup}>
@@ -98,7 +98,9 @@ const ContentSection: React.FC<ContentSectionProps> = ({
                       </p>
                     )}
 
-                    <p className={styles.description}>{item.description}</p>
+                    <p className={`description ${styles.description}`}>
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               </div>
