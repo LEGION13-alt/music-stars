@@ -24,8 +24,7 @@
 
 ```
 src/
-├── components/
-│   ├── sections/           # Секции лендинга
+├── components/         # Секции лендинга
 │   │   ├── Header/
 │   │   ├── Hero/
 │   │   ├── About/
@@ -34,13 +33,11 @@ src/
 │   │   ├── Portfolio/
 │   │   └── Contact/
 │   └── ui/                 # Переиспользуемые UI компоненты
-│       ├── Card/
 │       └── ContentSection/
 ├── styles/
 │   ├── variables.css       # CSS переменные
 │   └── global.css          # Глобальные стили
 ├── types/                  # TypeScript типы
-├── assets/                 # Статические ресурсы
 ├── App.tsx                 # Главный компонент
 └── main.tsx                # Точка входа
 ```
