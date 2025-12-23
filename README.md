@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# Music Stars - Музыкальная школа
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Сайт-визитка музыкальной школы "Music Stars", предлагающей обучение игре на фортепиано для детей и взрослых. Современный лендинг с адаптивным дизайном.
 
-Currently, two official plugins are available:
+## О проекте
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Технологии: React, TypeScript, CSS, Vite
 
-## React Compiler
+Тип проекта: Адаптивный лендинг (сайт-визитка)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ **Демо:** https://music-stars.vercel.app
 
-## Expanding the ESLint configuration
+## Техническая реализация
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### **Что сделано:**
+- **Адаптивный дизайн** - гибкий текст и отступы, подстраивающиеся под любой экран
+- **Оптимизация производительности** - ленивая загрузка изображений
+- **Интерактивные элементы** - галерея с навигацией, плавные переходы,адаптивное меню с бургером на мобильных
+- **Переиспользуемые компоненты** - ContentSection для секций Services и Portfolio
+- **Адаптивная типографика** - шрифты масштабируются на разных экранах
+- **Плавная навигация** - scroll с анимацией
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+  ### **Структура проекта:**
+  src/
+├── components/
+│   ├── sections/     # Секции лендинга
+│   │   ├── Header/
+│   │   ├── Hero/
+│   │   ├── About/
+│   │   ├── Services/
+│   │   ├── Teacher/
+│   │   ├── Portfolio/
+│   │   └── Contact/
+│   └── ui/          # Переиспользуемые UI компоненты
+│       └── ContentSection/
+├── styles/
+│   ├── variables.css # CSS переменные
+│   └── global.css    # Глобальные стили
+├── types/            # TypeScript типы
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Иконки и графика:**
+Иконки использованы с соблюдением лицензий:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+Social Media & Brands pack by Good Stuff No Nonsense (CC BY 4.0)
+Good Idea pack by Good stuff non sense (Free for commercial use)
+New year icons by Tea Tomescu (Free)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Источник: icon-icons.com
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+Авторство иконок указано в футере сайта в соответствии с требованиями лицензий
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
